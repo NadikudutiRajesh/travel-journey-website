@@ -1,0 +1,80 @@
+/* RadionicSpinner.css */
+.radionic-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(135deg, #4c1d95 0%, #312e81 100%);
+    /* purple-900 to indigo-900 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.radionic-container {
+    position: relative;
+    width: 12rem;
+    /* 48 * 0.25rem = 12rem */
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ring-outer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 4px solid #c084fc;
+    /* purple-400 */
+    border-radius: 9999px;
+    border-top-color: transparent;
+    border-right-color: transparent;
+}
+
+.ring-inner {
+    position: absolute;
+    width: 75%;
+    /* w-3/4 */
+    height: 75%;
+    border: 4px solid #818cf8;
+    /* indigo-400 */
+    border-radius: 9999px;
+    border-top-color: transparent;
+    border-left-color: transparent;
+}
+
+.core-atom {
+    position: absolute;
+    width: 50%;
+    /* w-1/2 */
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2.25rem;
+    /* text-4xl */
+}
+
+.orbit-icon-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #d8b4fe;
+    /* purple-300 */
+    font-size: 1.5rem;
+    /* text-2xl */
+}
+
+.orbit-icon-2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    color: #a5b4fc;
+    /* indigo-300 */
+    font-size: 1.5rem;
+    /* text-2xl */
+}
